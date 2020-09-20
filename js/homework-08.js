@@ -83,13 +83,13 @@ function onPressArrowKeys(event) {
 
   if (event.code === "ArrowRight") {
     if (index === galleryItems.length - 1) {
-      return;
+      index = -1;
     }
     index += 1;
   }
   if (event.code === "ArrowLeft") {
     if (index === 0) {
-      return;
+      index = galleryItems.length;
     }
     index -= 1;
   }
